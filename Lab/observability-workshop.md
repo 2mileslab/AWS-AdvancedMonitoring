@@ -1,5 +1,7 @@
 
-아래 내용 수정 필요
+cloud9-cfn 파일 286번 라인 RoleName 수정후 실행 
+<br> 
+RoleName: user30-observabilityworkshop-admin 
 
 ```
 curl -O https://raw.githubusercontent.com/2mileslab/AWS-AdvancedMonitoring/main/Lab/cloud9-cfn.yaml
