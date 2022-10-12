@@ -99,7 +99,7 @@ Resources:
                 "legend": {
                   "position": "bottom"
                 },
-                "region": "eu-west-1",
+                "region": "eu-north-1",
                 "liveData": false,
                 "title": "CommandsDeliveryTimedOut: Sum"
               }
@@ -121,7 +121,7 @@ Resources:
                 "legend": {
                   "position": "bottom"
                 },
-                "region": "eu-west-1",
+                "region": "eu-north-1",
                 "liveData": false,
                 "title": "CommandsFailed: Sum"
               }
@@ -143,7 +143,7 @@ Resources:
                 "legend": {
                   "position": "bottom"
                 },
-                "region": "eu-west-1",
+                "region": "eu-north-1",
                 "liveData": false,
                 "title": "CommandsSucceeded: Sum"
               }
@@ -166,7 +166,7 @@ Resources:
       CidrBlock: 10.0.0.0/18
       VpcId:
         Ref: EE2A327EC4
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       MapPublicIpOnLaunch: true
       Tags:
         - Key: aws-cdk:subnet-name
@@ -225,7 +225,7 @@ Resources:
       CidrBlock: 10.0.64.0/18
       VpcId:
         Ref: EE2A327EC4
-      AvailabilityZone: eu-west-1b
+      AvailabilityZone: eu-north-1b
       MapPublicIpOnLaunch: true
       Tags:
         - Key: aws-cdk:subnet-name
@@ -284,7 +284,7 @@ Resources:
       CidrBlock: 10.0.128.0/18
       VpcId:
         Ref: EE2A327EC4
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       MapPublicIpOnLaunch: false
       Tags:
         - Key: aws-cdk:subnet-name
@@ -322,7 +322,7 @@ Resources:
       CidrBlock: 10.0.192.0/18
       VpcId:
         Ref: EE2A327EC4
-      AvailabilityZone: eu-north-1a
+      AvailabilityZone: eu-north-1b
       MapPublicIpOnLaunch: false
       Tags:
         - Key: aws-cdk:subnet-name
@@ -392,11 +392,11 @@ Resources:
     Type: AWS::IAM::InstanceProfile
     Properties:
       Roles:
-        - TeamRole
+        - user30Role
   InstanceAtestinstanceA142BF03:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       IamInstanceProfile:
         Ref: InstanceAtestinstanceInstanceProfile55DFBB6D
       ImageId:
@@ -447,11 +447,11 @@ Resources:
     Type: AWS::IAM::InstanceProfile
     Properties:
       Roles:
-        - TeamRole
+        - user30Role
   InstanceBtestinstance604248CD:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       IamInstanceProfile:
         Ref: InstanceBtestinstanceInstanceProfileB0AD13DB
       ImageId:
@@ -502,11 +502,11 @@ Resources:
     Type: AWS::IAM::InstanceProfile
     Properties:
       Roles:
-        - TeamRole
+        - user30Role
   InstanceCtestinstanceE908D38B:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       IamInstanceProfile:
         Ref: InstanceCtestinstanceInstanceProfileF6D08129
       ImageId:
@@ -557,11 +557,11 @@ Resources:
     Type: AWS::IAM::InstanceProfile
     Properties:
       Roles:
-        - TeamRole
+        - user30Role
   InstanceDtestinstanceDAA91129:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       IamInstanceProfile:
         Ref: InstanceDtestinstanceInstanceProfile8470A1E9
       ImageId:
@@ -612,11 +612,11 @@ Resources:
     Type: AWS::IAM::InstanceProfile
     Properties:
       Roles:
-        - TeamRole
+        - user30Role
   InstanceEtestinstanceFD2332AA:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: eu-west-1a
+      AvailabilityZone: eu-north-1a
       IamInstanceProfile:
         Ref: InstanceEtestinstanceInstanceProfile52C33B3A
       ImageId:
