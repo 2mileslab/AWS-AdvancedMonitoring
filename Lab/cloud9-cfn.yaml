@@ -631,9 +631,6 @@ Resources:
           Key: Environment
           Value: !Sub ${EnvironmentName}
         -
-          Key: Name
-          Value: aws-cloud9-user30
-
 Outputs:
   VPC:
     Description: A reference to the created VPC
