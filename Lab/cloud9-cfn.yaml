@@ -629,7 +629,10 @@ Resources:
           Value: Active
         - 
           Key: Environment
-          Value: !Sub ${EnvironmentName} 
+          Value: !Sub ${EnvironmentName}
+        -
+          Key: Name
+          Value: aws-cloud9-user30
 
 Outputs:
   VPC:
