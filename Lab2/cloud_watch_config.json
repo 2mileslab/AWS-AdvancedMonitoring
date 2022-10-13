@@ -1,0 +1,57 @@
+{
+  "agent": {
+    "metrics_collection_interval": 60,
+    "run_as_user": "root"
+  },
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+          {
+          "file_path": "/var/log/messages",
+          "log_group_name": "demo-group",
+          "log_stream_name": "error"
+          },
+          {
+          "file_path": "/var/log/secure",
+          "log_group_name": "demo-group",
+          "log_stream_name": "http"
+          },
+          {
+          "file_path": "/var/log/httpd/access_log",
+          "log_group_name": "httpd-log",
+          "log_stream_name": "access_log"
+          },
+          {
+          "file_path": "/var/log/httpd/error_log",
+          "log_group_name": "httpd-log",
+          "log_stream_name": "error_log"
+          }
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "metrics_collected": {
+      "disk": {
+        "measurement": [
+          "used_percent",
+          "used",
+          "total"
+        ],
+        "metrics_collection_interval": 60,
+        "resources": [
+          "*"
+        ]
+      },
+      "mem": {
+        "measurement": [
+          "mem_used_percent",
+          "mem_total",
+          "mem_used"
+        ],
+        "metrics_collection_interval": 60
+      }
+    }
+  }
+}
